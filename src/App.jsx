@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Signup from './pages/Signup';
 import NoPage from './pages/NoPage';
 import Forgot from './pages/Forgot';
