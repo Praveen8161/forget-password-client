@@ -4,6 +4,7 @@ import { API, AppLink } from "../helpers/API";
 
 const Forgot = () => {
   const [response, setResponse] = useState('');
+  // URL for validate the email
   const URL = `${API}/forgot` ;
 
   function handleClick(user){
@@ -12,11 +13,13 @@ const Forgot = () => {
       return
     }
 
+    // React URL for new password update
     const mailUser = {
       email: user.email,
       link: `${AppLink}/reset`
     }
 
+    // validate email and send email
     fetch(URL, {
       method: 'POST',
       headers: {

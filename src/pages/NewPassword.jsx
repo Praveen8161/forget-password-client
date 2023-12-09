@@ -11,6 +11,7 @@ const NewPassword = () => {
   const URL = `${API}/reset/${id}/${token}` ;
   const updateURL = `${API}/reset/update/${id}/${token}` ;
 
+  // check if the token is valid
   useEffect(() => {
     fetch(URL, {
       method: 'GET',
@@ -23,6 +24,7 @@ const NewPassword = () => {
     .catch((err) => console.log(err))
   }, []);
 
+  // update the new password
   function handelClick(userPassword){
     fetch(updateURL, {
       method: 'PATCH',

@@ -9,6 +9,7 @@ const FrontComponent = ({pgHeading, handleClick, response}) => {
     password: ''
   });
 
+  // handel state
   function handleChange(e){
     setUser((prev) => ({
       ...prev,
@@ -56,7 +57,7 @@ const FrontComponent = ({pgHeading, handleClick, response}) => {
         </div>
       </div> 
 
-      {
+      { // show error and message
         response.error ? <p className=" text-red-500 text-xs" >{response.error}</p> : 
         response.data ? <p className=" text-green-500 text-xs" >{response.data}</p> : 
         response.message ? <p className=" text-green-500 text-xs" >{response.message} go to the login page</p> : ''

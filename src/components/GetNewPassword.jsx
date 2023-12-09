@@ -9,6 +9,7 @@ const GetNewPassword = ({handelClick, response}) => {
     confirmNewPassword: ''
   });
 
+  // update states
   function handleChange(e){
     setUserPassword((prev) => ({
       ...prev,

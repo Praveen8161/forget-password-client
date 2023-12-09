@@ -8,6 +8,7 @@ const GetEmail = ({handleClick, response, setResponse}) => {
   const [user, setUser] = useState({email: ''});
   const [show, setShow] = useState(false);
 
+  // handle state
   function handleChange(e){
     setUser({email: e.target.value})
   }
@@ -30,7 +31,7 @@ const GetEmail = ({handleClick, response, setResponse}) => {
         </div>
       </div> 
 
-      {
+      { //show error and messages
         response.error ? (<p className=" text-red-500 text-xs" >{response.error}</p>) :
         response.message ? (
           <>

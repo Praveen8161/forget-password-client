@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom"
 
 const NoPage = () => {
+  
     const navigate = useNavigate();
+
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-5 bg-slate-400">
 

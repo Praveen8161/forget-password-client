@@ -10,12 +10,13 @@ const Login = () => {
   const URL = `${API}/login/user` ;
 
   async function handleClick(user){
-
+    // check for empty data
     if(!user.email || !user.password){
       setResponse({error: 'Fields are required'})
       return 
     }
 
+    // validate user
     fetch(URL, {
       method: 'POST',
       headers: {

@@ -10,12 +10,13 @@ const Signup = () => {
   const pgHeading = 'Signup' ;
 
   async function handleClick(user){
-    
+    // check if there is empty data
     if(!user.email || !user.password){
       setResponse({error: 'Fields are required'})
       return 
     }
 
+    // update the uset data in DB
     fetch(URL, {
       method: 'POST',
       headers: {
