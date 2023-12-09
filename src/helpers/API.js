@@ -1,6 +1,5 @@
 // Server side URL
-export const API = 'http://localhost:9000' ;
-
+export const API = 'https://forget-password-server.onrender.com' ;
 
 // client side URL for new password
-export const AppLink = 'http://localhost:5173' ;
+export const AppLink = 'https://kaleidoscopic-crepe-c6c530.netlify.app' ;
