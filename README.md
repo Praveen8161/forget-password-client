@@ -2,8 +2,8 @@
 ## Overview
 ### SignUp
 - In SignUp page new user is registered in the database
-  - And a Temporary activation code is send to the user email using node mailer
-  - when user click the activation link there account is activated
+- And a Temporary activation code is send to the user email using node mailer
+- when user click the activation link there account is activated
 ### Login
   - when user entered a data , checks if the user existed in the database and allow them to log in
   - if the user credential is wrong it will throw an error
