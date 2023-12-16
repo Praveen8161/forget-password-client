@@ -1,5 +1,7 @@
 # Forgot Password Flow
 ## Overview
+
+Forgot Password flow in webpage
 ### SignUp
 - In SignUp page new user is registered in the database
 - And a Temporary activation code is send to the user email using node mailer
@@ -21,4 +23,4 @@
 - [BackEnd](https://github.com/Praveen8161/Forget-password-server.git)
 
 ## Live Site
-- [Live Site](https://kaleidoscopic-crepe-c6c530.netlify.app/)
+- [Live Site](https://forgot-password-8161.netlify.app/)
