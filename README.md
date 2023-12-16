@@ -1,7 +1,7 @@
 # Forgot Password Flow
 ## Overview
 
-Forgot Password flow in webpage
+Forgot Password flow in website
 ### SignUp
 - In SignUp page new user is registered in the database
 - And a Temporary activation code is send to the user email using node mailer
